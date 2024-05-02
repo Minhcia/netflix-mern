@@ -1,0 +1,146 @@
+.profile-page {
+  background-color: #333;
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    
+    img {
+      height: 25px;
+      margin-right: 40px;
+
+      // @include mobile {
+      //   display: none;
+      // }
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    nav {
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+          display: inline;
+          margin-right: 20px;
+
+          a {
+            color: white;
+            text-decoration: none;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  main {
+    margin: auto; 
+    // max-width: 1000px; 
+    min-height: 100vh;
+    padding: 20px; 
+    padding-top: 40px;
+    background-color: #000;
+    align-items: center;
+
+    .profile-info {
+      margin: 30px;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      h2 {
+        margin-top: 0;
+      }
+
+      .profile-details {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 20px;
+
+        .avatar {
+
+          img {
+            width: 100px;
+            height: 150px;
+            border-radius: 50%;
+          }
+        }
+
+        .user-details {
+          color: white;
+          border-radius: 5px;
+          padding: 5px;
+          
+        h3 {
+          margin-top: 0;
+        }
+
+        p {
+          margin: 10px 0;
+          
+        }
+
+        input[type='text'] {
+          height: 30px;
+          border-radius: 5px;
+          border: 1px solid #ccc;
+          padding: 5px;
+          margin-bottom: 5px; /* Add margin between input fields */
+          width: 100%; /* Take up full width of the container */
+          box-sizing: border-box; /* Ensure padding is included in the width */
+        }
+        }
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: #e50914;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 60%; 
+        box-sizing: border-box; 
+
+        &:hover {
+          background-color: #ff1e34;
+        }
+      }
+    }
+
+    .profile-settings {
+      padding: 10px;
+      color: rgb(219, 211, 211);
+      width: 50%;
+      // align-content: center;
+      text-align: center;
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+          margin-bottom: 10px;
+
+          a {
+            color: rgb(151, 146, 146);
+            text-decoration: none;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}
